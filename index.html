@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro">
+      <h1 style="padding-bottom: 20px"><b>Learn to code by watching others</b></h1>
+      See how experienced developers solve problems in real-time.<br> Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.
+
+    </div>
+    <div class="header">
+      <b>Try it free 7 days</b> then $20/mo. thereafter
+    </div>
+    <div class="form" id="myform">
+      <form style="border:  1px solid white" id="myform">
+        <div class="form-field">
+          <input type="text" class="form-control" id="fname" style="border-radius:3px;" name="fname" value="Jonathan">
+          <small id="first" class="alert" style=" color:hsl(0, 100%, 74%);font-style: italic"> </small>
+        </div>
+        <div class="form-field">
+          <input type="text" class="form-control" id="lname" style="border-radius:3px;" name="lname" value="Last Name"
+          >
+          <small id="last" class="alert" style=" color:hsl(0, 100%, 74%);font-style: italic;"> </small>
+
+        </div>
+        <div class="form-field">
+          <input type="text" class="form-control" id="email" style="border-radius:3px;" name="email"
+            value="Email Address" >
+          <small id="mail" class="alert" style="color:hsl(0, 100%, 74%);font-style: italic"> </small>
+
+        </div>
+        <div class="form-field">
+          <input type="text" class="form-control" id="pin" style="border-radius:3px;" name="pin" value="Password"
+            >
+          <small id="pass" class="alert" style="color:hsl(0, 100%, 74%); font-style: italic"> </small>
+
+        </div>
+        <div class="form-field">
+          <button type="submit" id="submit" class="btn"
+            style="background-color:hsl(154, 59%, 51%); color:white;border: none; border-radius: 5px; width:100%; padding: 10px">ClAIM
+            YOUR FREE TRIAL</button>
+        </div>
+      </form>
+      <small id="terms" style="color:hsl(246, 25%, 77%) ">By clicking the button, you are agreeing to our <em
+          style="color: red">Terms and Services</em> </small>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Aliyu NUrudeen</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

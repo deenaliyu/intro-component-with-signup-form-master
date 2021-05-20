@@ -1,0 +1,121 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+ body{
+     font-family: poppins;
+     font-weight: 400, 500, 600, 700;
+     font-size: 16px;
+     background-image: url('images/bg-intro-desktop.png')!important;
+     background-color: hsl(0, 100%, 74%)!important;
+ }   
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-auto-rows: repeat(2,auto);
+    grid-gap: 10px;
+    margin: 100px;
+    grid-template-areas: 
+        "header header"
+        "intro form"
+        
+}
+
+.intro{
+    grid-area: intro;
+    color: white;
+    width: 70.0%;
+    margin-left: 20px;
+        
+    
+}
+
+.header{
+    grid-area: header;
+    text-align:center;
+    background-color:hsl(248, 32%, 49%);
+    margin-left: 60.4%;
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+
+}
+
+.form{
+    grid-area: form;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+	
+}
+
+input[type=text]{
+    background-image: none;
+    background-position:330px;
+    background-size:20px;
+    background-color: white;
+    background-repeat: no-repeat;
+    margin-bottom: 1%;
+    margin-top: 2%;
+
+    
+}
+.alert{
+    margin-left: 45%;
+   
+}
+
+
+@media (max-width:375px){
+   .container{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-auto-rows: repeat(3,auto);
+    grid-gap: 30px;
+    margin: 100px;
+    grid-template-areas: 
+        "intro"
+        "header"
+        "form"
+        
+}
+
+.intro{
+    grid-area: intro;
+    color: white;
+    text-align: center;
+    width: 95%;
+    
+}
+.header{
+    grid-area: header;
+    text-align:center;
+    background-color:hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 5px;
+    color: white;
+    padding: 30px;
+    margin: 0px
+
+}
+
+.form{
+    grid-area: form;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+} 
+    input[type=text]{
+    background-image: none;
+    background-position:170px;
+    background-size:20px;
+    background-color: white;
+    background-repeat: no-repeat;
+
+ 
+}
+.alert{
+    margin-left: 25%;
+}
+}
