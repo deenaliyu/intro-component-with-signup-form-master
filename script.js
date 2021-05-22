@@ -1,6 +1,7 @@
 
 const form = document.getElementById('myform') ;
 form.addEventListener('submit' , function (e) {
+	e.preventDefault();
 	if (fname.value == ""){
 		 document.getElementById('first').textContent = "first name cannot be empty";
 		 document.getElementById('fname').style.backgroundImage = "url('images/icon-error.svg')";
